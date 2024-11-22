@@ -1,4 +1,4 @@
-// Firebase configuration
+// Firebase configuratin
 const firebaseConfig = {
     apiKey: "AIzaSyBSbpgNHrllE3LqE7AqvvJSFxOb3uHBWRs",
     authDomain: "corded-academy-404101.firebaseapp.com",
