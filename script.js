@@ -391,31 +391,34 @@ async function callGeminiAPI(apiKey, modelName, imageData, mimeType, withSolutio
     13. Separate each MCQ block with two blank lines.
     14. Do not include phrases like "Therefore, the correct answer is...".
     sample :
-    15. The population of a town increases at the rate of 10% every year. The present population is 1,000. In how many years will the population become 1,331? 
-        (??? ????????? ?????? ???? ??????? ??????? 10% ??????????? ?????????????. ???????? ?????? ???? 1,000. ?????? ?????????? ?????? ???? 1,331 ?? ???????)
-         1. 3 ?
-         2. 2.5 
-         3. 2 (2)
-         4. 3.5 (3.5)
-         Solution:
-         Let, n years will the population become 1,331.
-         We know that,
-         A = P [1 + (r/100)]^n
-         1331 = 1000 [1 + (10/100)]^n
-         1331 = 1000 [1 + (1/10)]^n
-         1331 = 1000 [11/10]^n
-         1331/1000 = [11/10]^n
-         (11/10)^3 = (11/10)^n
-         n = 3 years
-         n ???????? ?????? ???? 1,331 ?? ?????? ????.
-         ???????? ????????,
-         A = P [1 + (r/100)]^n
-         1331 = 1000 [1 + (10/100)]^n
-         1331 = 1000 [1 + (1/10)]^n
-         1331 = 1000 [11/10]^n
-         1331/1000 = [11/10]^n
-
-         16. if solution is availabele use that solution without modification 
+    15.25. Two students appeared for an entrance examination. One of them secured 15 marks more than the other and his marks are 80% of the sum of their marks. What are the marks obtained by each of them?
+           (இரண்டு மாணவர்கள் ஒரு நுழைவுத் தேர்வுக்குத் தோன்றினர். அவர்களில் ஒருவர் மற்றவரை விட 15 மதிப்பெண்கள் அதிகமாகப் பெற்றார், மேலும் அவரது மதிப்பெண்கள் அவர்களின் மதிப்பெண்களின் கூட்டுத்தொகையில் 80% ஆகும். அவர்கள் ஒவ்வொருவரும் பெற்ற மதிப்பெண்கள் என்ன?)
+       1. 5 and 20 ?
+       2. 6 and 21
+       3. 8 and 23
+       4. 4 and 19
+      Solution:
+    Let the marks obtained by one student be x.
+    Then the marks obtained by the other student = x + 15
+    According to the question,
+    x + 15 = 80% of (x + x + 15)
+    x + 15 = (80/100) * (2x + 15)
+    x + 15 = (4/5) * (2x + 15)
+    5x + 75 = 8x + 60
+    3x = 15
+    x = 5
+    So, the marks obtained by the two students are 5 and 5 + 15 = 20.
+    ஒரு மாணவர் பெற்ற மதிப்பெண்கள் 'x' என்று வைத்துக்கொள்வோம்.
+    மற்ற மாணவர் பெற்ற மதிப்பெண்கள் = x + 15
+    கேள்வியின் படி:
+    x + 15 = (x + x + 15) இல் 80%
+    x + 15 = (80/100) * (2x + 15)
+    x + 15 = (4/5) * (2x + 15)
+    5x + 75 = 8x + 60
+    3x = 15
+    x = 5
+    எனவே, இரண்டு மாணவர்கள் பெற்ற மதிப்பெண்கள் 5 மற்றும் 5 + 15 = 20.
+    16. if solution is availabele use that solution without modification 
          
     Your primary goal is to provide accurate, well-formatted MCQs${withSolution ? ' and solutions' : ''} based on the image content provided.`;
     
