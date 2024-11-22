@@ -376,7 +376,7 @@ async function callGeminiAPI(apiKey, modelName, imageData, mimeType, withSolutio
     7. If there's a table in the question, format it using HTML table tags. Use the class "mcq-table" for the table element.
     8. Use this format for your output:
 
-    [Original Question number]. [Question text ) translate to tamil ( with english and tamil mcq)] ( tamil not tanglish
+    [Original Question number]. [Question text ) translate to tamil ( with english and tamil mcq with solution)] ( tamil not tanglish
     [HTML table, if present]
     1. [Option 1]
     2. [Option 2]
@@ -419,8 +419,8 @@ async function callGeminiAPI(apiKey, modelName, imageData, mimeType, withSolutio
     x = 5
     எனவே, இரண்டு மாணவர்கள் பெற்ற மதிப்பெண்கள் 5 மற்றும் 5 + 15 = 20.
     16. if solution is availabele use that solution without modification 
-         
-    Your primary goal is to provide accurate, well-formatted MCQs${withSolution ? ' and solutions' : ''} based on the image content provided.`;
+    17. you should provide english and tamil mcq with solution ( solution also in tamil )
+    Your primary goal is to provide accurate, well-formatted MCQs${withSolution ? ' and solutions' : ''} based on the image content provided.`; 
     
     const maxRetries = 5;
     const baseDelay = 1000; // 1 second
